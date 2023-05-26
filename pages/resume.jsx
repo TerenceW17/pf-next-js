@@ -1,184 +1,241 @@
-import React from 'react';
-import Head from 'next/head';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import React from "react";
+import Head from "next/head";
+import { FaGitlab, FaLinkedinIn } from "react-icons/fa";
 
 const resume = () => {
   return (
     <>
       <Head>
-        <title>Clint | Resume</title>
-        <meta
-          name='description'
-          content='I’m a front-end web developer specializing in building (and occasionally designing) exceptional digital experiences.'
-        />
-        <link rel='icon' href='/fav.png' />
+        <title>Terence Wong | Resume</title>
+        <meta name="description" content="I’m a full-stack software engineer" />
+        <link rel="icon" href="/fav.png" />
       </Head>
 
-      <div className='max-w-[940px] mx-auto p-2 pt-[120px]'>
-        <h2 className='text-center'>Resume</h2>
-        <div className='bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center'>
-          <h2 className='text-center'>Clint Briley</h2>
-          <div className='flex'>
+      <div className="max-w-[940px] mx-auto p-2 pt-[120px]">
+        <h2 className="text-center">Resume</h2>
+        <div className="bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center">
+          <h2 className="text-center">Terence Wong</h2>
+          <div className="flex">
             <a
-              href='https://www.linkedin.com/in/clint-briley-50056920a/'
-              target='_blank'
-              rel='noreferrer'
+              href="https://www.linkedin.com/in/terence-s-wong/"
+              target="_blank"
+              rel="noreferrer"
             >
-              <FaLinkedinIn size={20} style={{ marginRight: '1rem' }} />
+              <FaLinkedinIn size={20} style={{ marginRight: "1rem" }} />
             </a>
             <a
-              href='https://github.com/fireclint'
-              target='_blank'
-              rel='noreferrer'
+              href="https://gitlab.com/terencew17"
+              target="_blank"
+              rel="noreferrer"
             >
-              <FaGithub size={20} style={{ marginRight: '1rem' }} />
+              <FaGitlab size={20} style={{ marginRight: "1rem" }} />
             </a>
           </div>
         </div>
-        <div className='text-center py-4 text-xl font-bold uppercase tracking-wider'>
-          <div className='hidden sm:block'>
-            <p>
-              Proven Leadership <span className='px-1'>|</span> Web Development{' '}
-              <span className='px-1'>|</span> Complex Problem Solving
-            </p>
-          </div>
-          <div className='block sm:hidden'>
-            <p>Proven Leadership</p>
-            <p className='py-2'>Web Development</p>
-            <p>Complex Problem Solving</p>
-          </div>
-        </div>
-        <p>
-          Analytical, innovative, and motivated web development professional
-          with experience in customer service, team leadership, and
-          organizational effectiveness in fast-paced and challenging
-          environments. Adept at developing strategies and driving streamlined
-          operations. Diverse analytical skills, team collaboration, and
-          relationship building. Consummate professional, and motivated leader,
-          with solid interpersonal abilities and complex problem-solving skills.
-          Effective and proven track record of critical thinking, idea
-          generation, and optimizing efficiencies.
-        </p>
 
         {/* Skills */}
-        <div className='text-center py-4'>
-          <h5 className='text-center underline text-[18px] py-2'>Skills</h5>
-          <p className='py-2'>
-            <span className='font-bold'>Technical Skills</span>
-            <span className='px-2'>|</span>Front-End Web Developer
-            <span className='px-2'>|</span> HTML
-            <span className='px-2'>|</span>CSS
-            <span className='px-2'>|</span>Javascript
-            <span className='px-2'>|</span>React
-            <span className='px-2'>|</span>Next JS
-            <span className='px-2'>|</span>SQL
-            <span className='px-2'>|</span>NoSQL
-            <span className='px-2'>|</span>Redux
-            <span className='px-2'>|</span>Tailwind
-            <span className='px-2'>|</span> Firebase
-            <span className='px-2'>|</span> RESTAPI
+        <div className="text-center py-4">
+          <h5 className="text-center underline text-[18px] py-2">
+            Technical Skills
+          </h5>
+          <p className="py-2">
+            <span className="font-bold">Front End</span>
+            <span className="px-2">|</span>DOM manipulation
+            <span className="px-2">|</span>Websockets
+            <span className="px-2">|</span>React
+            <span className="px-2">|</span>React Hooks
+            <span className="px-2">|</span>Redux Toolkit
           </p>
-          <p className='py-2'>
-            <span className='font-bold'>Amazon Web Services</span>
-            <span className='px-2'>|</span>Amazon Web Services Cloud
-            Practitioner
+          <p className="py-2">
+            <span className="font-bold">Back End</span>
+            <span className="px-2">|</span>Django
+            <span className="px-2">|</span>RabbitMQ
+            <span className="px-2">|</span>PostgreSQL
+            <span className="px-2">|</span>MongoDB
+            <span className="px-2">|</span>FastAPI
+          </p>
+          <p className="py-2">
+            <span className="font-bold">Programming Languages</span>
+            <span className="px-2">|</span>Python
+            <span className="px-2">|</span>Javascript ES6+
+            <span className="px-2">|</span>SQL
+            <span className="px-2">|</span>HTML5
+            <span className="px-2">|</span>CSS
+          </p>
+          <p className="py-2">
+            <span className="font-bold">Skills/Tools</span>
+            <span className="px-2">|</span>Git
+            <span className="px-2">|</span>Microservices
+            <span className="px-2">|</span>Domain-Driven Design
+            <span className="px-2">|</span>Message Passing
+            <span className="px-2">|</span>Event Sourcing
+            <span className="px-2">|</span>Docker
           </p>
         </div>
 
-        <h5 className='text-center underline text-[18px] py-4'>
-          Professional Experience
+        <h5 className="text-center underline text-[18px] py-4">
+          Application Development Experience
         </h5>
         {/* Experience */}
-        <div className='py-6'>
-          <p className='italic'>
-            <span className='font-bold italic'>
-            INFINITE TECH
-            </span>
-            <span className='px-2'>|</span>Dallas, TX
+        <div className="py-3">
+          <p className="italic">
+            <span className="font-bold italic">To-Do List</span>
+            <span className="px-2">|</span>2022
           </p>
-          <p className='py-1 italic'>Front End Web Developer & Web Master (2013 - Current)</p>
-          <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
+          <p className="py-1 italic">Python, Django, CSS, HTML5</p>
+          <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
             <li>
-              Ensured comprehensive mobile responsive UI layouts with
-              understanding of HTML, CSS, and JavaScript.
+              Implemented Django models and views to allow users to sign-up,
+              create, edit, and delete tasks/projects
+            </li>
+            <li>MORE INFO HERE********************</li>
+          </ul>
+        </div>
+        <div className="py-3">
+          <p className="italic">
+            <span className="font-bold italic">Conference GO!</span>
+            <span className="px-2">|</span>2023
+          </p>
+          <p className="py-1 italic">Python, Django, Javascript, React</p>
+          <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
+            <li>
+              Developed a conference management application, adhering to the
+              principles of Domain-Driven-Design, to establish a scalable and
+              maintainable architecture with CRUD functionality
             </li>
             <li>
-              Troubleshoot issues and concerns, configure operation and analytic
-              plugins, and design changes as needed.
+              Created a microservice that ultilized RabbitMQ for data retrieval
+              and regular polling from the monolith
             </li>
             <li>
-              Worked directly with a diverse client base to understand and
-              implement multiple technologies and programs.
-            </li>
-            <li>
-              Platform migration managing DNS servers as well as MX records and
-              ensuring a smooth migration process.
+              Developed an anti-corruption layer, integrating third-party APIs:
+              Pexels and OpenWeather
             </li>
           </ul>
         </div>
-
-
-        {/* Personal Experience */}
-        <div className='py-6'>
-          <p className='italic'>
-            <span className='font-bold italic'>
-              Teaching & Mentoring Web Development
-            </span>
-            <span className='px-2'>|</span>Dallas, TX
+        <div className="py-3">
+          <p className="italic">
+            <span className="font-bold italic">Car Car</span>
+            <span className="px-2">|</span>2023
           </p>
-          <p className='py-1 italic'>Code Commerce - Youtube Channel (2021 - Current)</p>
-          <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
+          <p className="py-1 italic">
+            Python, Django, Javascript, React, Bootstrap
+          </p>
+          <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
             <li>
-              In 2021 I started “Code Commerce”, a YouTube channel focused on
-              sharing what I’m learning in web development, specifically
-              front-end development.
+              Developed a full stack application for dealerships consisting of
+              three microservices to track inventory sales, services, and
+              inventory
             </li>
             <li>
-              Private 1 on 1 Zoom coaching calls related to web development.
-              More specifically debugging, teaching basic web development
-              concepts and code reviews.
+              Created RESTful APIs with Django for the sales and services
+              microservice
+            </li>
+            <li>
+              Integrated APIs from the microservices into a React single-page
+              application for dynamic data presentation
+            </li>
+            <li>
+              Implemented a poller implementation to enable communication
+              between microservices
+            </li>
+          </ul>
+        </div>
+        <div className="py-3">
+          <p className="italic">
+            <span className="font-bold italic">Mooditor</span>
+            <span className="px-2">|</span>2023
+          </p>
+          <p className="py-1 italic">
+            Python, FastAPI, PostgreSQL, Javascript, React, TailwindCSS
+          </p>
+          <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
+            <li>
+              Utilized agile methodologies, including regular sprints and daily
+              stand-up meetings, to ensure efficient development and effective
+              collaboration within the team
+            </li>
+            <li>
+              Designed and implemented the backend infrastructure using FastAPI,
+              PostgreSQL and Docker, ensuring robustness, scalability and
+              security of the application
+            </li>
+            <li>
+              Developed RESTful APIs and database models for user
+              authentication, mood and activity tracking
+            </li>
+            <li>
+              Conducted thorough unit testing and debugging to identify and
+              resolve issues, ensuring a high-quality and bug-free application
+            </li>
+            <li>
+              Established GitLab-based continuous integration and deployment
+              (CI/CD) pipelines to automate the processes of building, testing,
+              and deploying
             </li>
           </ul>
         </div>
 
         {/*  */}
-        <h5 className='text-center underline text-[18px] py-4'>
-          Other Professional Experience
+        <h5 className="text-center underline text-[18px] py-4">
+          Professional Experience
         </h5>
-      
+
         {/* Experience */}
-        <div className='py-6'>
-          <p className='italic'>
-            <span className='font-bold'>CITY OF SHERMAN, TX</span>
-            <span className='px-2'>|</span>Sherman, TX
+        <div className="py-1">
+          <p className="italic">
+            <span className="font-bold">O'Reilly Auto Parts</span>
+            <span className="px-2">|</span>Pleasant Hill, CA
           </p>
-          <p className='py-1 italic'>Paramedic / Firefighter (2010 – 2019)</p>
-          <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
+          <p className="py-1 italic">Manager (2019 – 2022)</p>
+          <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
             <li>
-              Ensured proper implementation of firefighting techniques and
-              practices including controlling and extinguishing fires, operating
-              hose lines, and fire ground operations, ventilation, and search
-              and rescue.
+              Successfully managed a 3 million dollar a-year store, overseeing
+              two different departments and a team of 15 employees
             </li>
             <li>
-              Oversaw comprehensive understanding, operation, and maintenance of
-              fire engines, ladder trucks, technical rescue apparatus, and
-              response trailers.
+              Maintained high levels of customer satisfaction by providing
+              top-notch customer service and addressing concerns in a timely and
+              professional manner
             </li>
             <li>
-              Performed ALS techniques as needed within emergency situations
-              including the use of an esophageal or dual lumen airway device and
-              oral intubation using laryngoscopy.
+              Increased sales by 30% by implementing marketing strategies,
+              improving store layout and merchandising, and offering promotions
+            </li>
+          </ul>
+        </div>
+        <div className="py-6">
+          <p className="italic">
+            <span className="font-bold">United States Marine Corps</span>
+          </p>
+          <p className="py-1 italic">Sergeant (2015 – 2020)</p>
+          <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
+            <li>
+              Ensured mission readiness by training Marines on proper tactics
+              and procedures
             </li>
             <li>
-              Collaborated with a talented and high performing team of
-              firefighters in high pressure and stressful situations as needed.
+              Conducted and supervised Marines in various training exercises,
+              including live-fire drills
             </li>
+            <li>Maintained accurate records of personnel and equipment</li>
+          </ul>
+        </div>
+        <h5 className="text-center underline text-[18px] py-4">Education</h5>
+
+        {/* Education */}
+        <div className="py-3">
+          <p className="italic">
+            <span className="font-bold">Hack Reactor</span>
+            <span className="px-2">|</span>Advanced Software Engineering
+            Certificate
+            <span className="px-2">|</span>2023
+          </p>
+          <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
             <li>
-              Utilized proven and demonstrated knowledge of multiple
-              certifications including Pediatric Advanced Life Support,
-              Prehospital Trauma Life Support, and Advanced Cardiac Life
-              Support, among others.
+              Over 1000 hours of coding in an Agile environment resulting in
+              monolithic mastery and experience in microservice machinations and
+              managed matters
             </li>
           </ul>
         </div>
